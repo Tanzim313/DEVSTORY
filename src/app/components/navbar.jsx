@@ -1,5 +1,6 @@
-import Link from 'next/link'
+"use client";
 import React from 'react'
+import NavLink from './NavLink'
 
 export default function navbar() {
   return (
@@ -7,19 +8,19 @@ export default function navbar() {
 <div className='flex justify-around'>
     
     <span className='flex justify-start font-bold mx-4 my-4 ' >
-         <Link href={"/"}>Dev-Story</Link>
+         <NavLink href={"/"}>Dev-Story</NavLink>
     </span>
 
     <div className='flex justify-end mx-4 my-4 gap-2 font-bold '>
-    <Link href="/">Home</Link>
-    <Link href="/login">Login</Link>
-    <Link href="/register">Register</Link>
-    <Link href="/tutorials">Tutorials</Link>
-    <Link href="/stories">Stories</Link>
-    <Link href="/dashboard">Dashboard</Link>
-    <Link href="/about">about</Link>
-    <Link href="/about/contact">Contact</Link>
-    <Link href="/about/team">Team</Link>
+    <NavLink href="/">Home</NavLink>
+    <NavLink href="/login">Login</NavLink>
+    <NavLink href="/register">Register</NavLink>
+    <NavLink href="/tutorials">Tutorials</NavLink>
+    <NavLink href="/stories">Stories</NavLink>
+    <NavLink href="/dashboard">Dashboard</NavLink>
+    <NavLink href="/about">about</NavLink>
+    <NavLink href="/about/contact">Contact</NavLink>
+    <NavLink href="/about/team">Team</NavLink>
     </div>
 </div>
   )
